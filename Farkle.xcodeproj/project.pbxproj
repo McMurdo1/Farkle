@@ -21,6 +21,8 @@
 		3A1D1FDC18872592002FD2A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1D1FBE18872592002FD2A5 /* UIKit.framework */; };
 		3A1D1FE418872592002FD2A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A1D1FE218872592002FD2A5 /* InfoPlist.strings */; };
 		3A1D1FE618872592002FD2A5 /* FarkleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D1FE518872592002FD2A5 /* FarkleTests.m */; };
+		3A1D1FF1188725AE002FD2A5 /* DieLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D1FF0188725AE002FD2A5 /* DieLabel.m */; };
+		3A1D1FF4188762BD002FD2A5 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1D1FF3188762BD002FD2A5 /* CheckMate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		3A1D1FE118872592002FD2A5 /* FarkleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FarkleTests-Info.plist"; sourceTree = "<group>"; };
 		3A1D1FE318872592002FD2A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A1D1FE518872592002FD2A5 /* FarkleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FarkleTests.m; sourceTree = "<group>"; };
+		3A1D1FEF188725AE002FD2A5 /* DieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DieLabel.h; sourceTree = "<group>"; };
+		3A1D1FF0188725AE002FD2A5 /* DieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DieLabel.m; sourceTree = "<group>"; };
+		3A1D1FF218873226002FD2A5 /* DieLabelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DieLabelDelegate.h; sourceTree = "<group>"; };
+		3A1D1FF3188762BD002FD2A5 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckMate.framework; path = ../../MMPrep/CheckMate.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1D1FF4188762BD002FD2A5 /* CheckMate.framework in Frameworks */,
 				3A1D1FBD18872592002FD2A5 /* CoreGraphics.framework in Frameworks */,
 				3A1D1FBF18872592002FD2A5 /* UIKit.framework in Frameworks */,
 				3A1D1FBB18872592002FD2A5 /* Foundation.framework in Frameworks */,
@@ -101,6 +108,7 @@
 		3A1D1FB918872592002FD2A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A1D1FF3188762BD002FD2A5 /* CheckMate.framework */,
 				3A1D1FBA18872592002FD2A5 /* Foundation.framework */,
 				3A1D1FBC18872592002FD2A5 /* CoreGraphics.framework */,
 				3A1D1FBE18872592002FD2A5 /* UIKit.framework */,
@@ -115,6 +123,9 @@
 				3A1D1FC918872592002FD2A5 /* AppDelegate.h */,
 				3A1D1FCA18872592002FD2A5 /* AppDelegate.m */,
 				3A1D1FCC18872592002FD2A5 /* Main.storyboard */,
+				3A1D1FF218873226002FD2A5 /* DieLabelDelegate.h */,
+				3A1D1FEF188725AE002FD2A5 /* DieLabel.h */,
+				3A1D1FF0188725AE002FD2A5 /* DieLabel.m */,
 				3A1D1FCF18872592002FD2A5 /* ViewController.h */,
 				3A1D1FD018872592002FD2A5 /* ViewController.m */,
 				3A1D1FD218872592002FD2A5 /* Images.xcassets */,
@@ -252,6 +263,7 @@
 				3A1D1FD118872592002FD2A5 /* ViewController.m in Sources */,
 				3A1D1FCB18872592002FD2A5 /* AppDelegate.m in Sources */,
 				3A1D1FC718872592002FD2A5 /* main.m in Sources */,
+				3A1D1FF1188725AE002FD2A5 /* DieLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +390,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/McMurdo1/Documents/MMPrep,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Farkle/Farkle-Prefix.pch";
 				INFOPLIST_FILE = "Farkle/Farkle-Info.plist";
@@ -391,6 +407,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/McMurdo1/Documents/MMPrep,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Farkle/Farkle-Prefix.pch";
 				INFOPLIST_FILE = "Farkle/Farkle-Info.plist";
